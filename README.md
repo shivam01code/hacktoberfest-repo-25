@@ -11,7 +11,13 @@ A beginner-friendly open-source project for Hacktoberfest 2025 🎉 — contribu
 2. Create a branch: `git switch -c feat/<short-desc>`.
 3. Run locally, add tests, commit small and descriptive.
 4. Open a PR (see the template). Link the issue using `Closes #<id>`.
+   
+## 🧰 Installation Guide
 
+### 📥 Clone the Repository
+```bash
+git clone https://github.com/livetrack74/hacktoberfest-repo-25.git
+cd hacktoberfest-repo-25
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) and follow our [Code of Conduct](CODE_OF_CONDUCT.md).
