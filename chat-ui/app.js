@@ -273,3 +273,23 @@ if (avatarEl) {
   favicon.href = canvas.toDataURL();
   document.head.appendChild(favicon);
 }
+// ===== Added validation by Shivam =====
+
+function sendMessage() {
+    const input = document.getElementById("messageInput");
+    const message = input.value.trim();
+
+    if (message === "") {
+        alert("Message cannot be empty!");
+        return;
+    }
+
+    // existing logic continue
+}
+
+// Enter key support
+document.getElementById("messageInput").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        sendMessage();
+    }
+});
