@@ -132,6 +132,7 @@ function closePicker() {
 }
 
 // Open picker / remove reaction
+if (INPUT.value.trim() === "") return;
 MESSAGES_EL.addEventListener('click', (e) => {
   const btn = e.target.closest('.react-btn');
   if (btn) {
