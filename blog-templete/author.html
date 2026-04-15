@@ -130,5 +130,24 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+document.querySelector("form").addEventListener("submit", function(e) {
+
+    const name = document.querySelector("input[name='name']").value.trim();
+    const email = document.querySelector("input[name='email']").value.trim();
+
+    if (name === "" || email === "") {
+        alert("All fields are required!");
+        e.preventDefault();
+        return;
+    }
+
+    if (!email.includes("@")) {
+        alert("Enter valid email!");
+        e.preventDefault();
+        return;
+    }
+});
+</script>
 </body>
 </html>
